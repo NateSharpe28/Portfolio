@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href = "CSS/Main.css">
+        <title>Home</title>
+        <link rel="icon" href="Resources/images/Logo-Cir.webp" type="image/x-icon">
+    </head>
+    <body>
+        <header class = "header">
+            <img id="Logo" src="Resources/images/Logo-Sqr.png" alt="Prince's University Logo">
+
+            <nav>
+                <ul>
+                    <li><a class="navLink" href="index.html">Home</a></li>
+                    <li><a class="navLink" href="StudentServices.html">Student Services</a></li>
+                    <li><a class="navLink" href="Career.html">Careers</a></li>
+                    <li><a class="navLink" href="StudentEvents.html">Student Events</a></li>
+                    <li><a class="navLink" href="Contact.html">Contacts</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-icons">
+                <button id="darkToggle" aria-label="Toggle dark mode">
+                    <img id="moonIcon" src="Resources/images/Sun.png" alt="Switch to dark mode">
+                    <img id="sunIcon"  src="Resources/images/Moon.png"  alt="Switch to light mode" style="display:none;">
+                </button>
+                <div class = "dropdown">
+                    <img id="profile" src="Resources/images/Profile-Light.webp" alt="Profile Icon">
+                    <div class = "dropdown-content">
+                        <form class = "loginForm" id ="loginForm" autocomplete="off">
+                            <label for ="email">Email:</label>
+                            <input type = "text" name="email" id ="email">
+                            <label for ="password">Password:</label>
+                            <input type = "password" name = "password" id="password">
+                            <input type = "submit" id = "loginButton">
+                            <p id = "errors"></p>
+                        </form>
+                    </div>
+                </div>
+                <button id="hamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Mobile nav-bar -->
+        <div id="mobileNav">
+            <a href="index.html">Home</a>
+            <a href="StudentServices.html">Student Services</a>
+            <a href="Career.html">Careers</a>
+            <a href="StudentEvents.html">Student Events</a>
+            <a href="Contact.html">Contacts</a>
+        </div>
+
+
+
+        <div class="content">
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <!-- Clone of last slide -->
+                        <div class="slide clone" style="background-image: linear-gradient(rgba(75,0,110,0.50), rgba(26,0,48,0.50)), url('Resources/images/football.webp');">
+                            <p class="slide-subtitle">Football Training Begins Now</p>
+                            <h1>PU U25 Training</h1>
+                            <button class="slide-btn">Learn More</button>
+                        </div>
+                        <!-- Real slides -->
+                        <div class="slide active" style="background-image: linear-gradient(rgba(75,0,110,0.50), rgba(26,0,48,0.50)), url('Resources/images/Add-Learn-Support.png');">
+                            <p class="slide-subtitle">Additional Learning Support</p>
+                            <h1>New study support is now available to all students</h1>
+                            <button class="slide-btn">Learn More</button>
+                        </div>
+                        <div class="slide" style="background-image: linear-gradient(rgba(75,0,110,0.50), rgba(26,0,48,0.50)), url('Resources/images/WorkPlacement.png');">
+                            <p class="slide-subtitle">Get Careers advice</p>
+                            <h1>Placements open now</h1>
+                            <button class="slide-btn">Learn More</button>
+                        </div>
+                        <div class="slide" style="background-image: linear-gradient(rgba(75,0,110,0.50), rgba(26,0,48,0.50)), url('Resources/images/football.webp');">
+                            <p class="slide-subtitle">Football Training Begins Now</p>
+                            <h1>PU U25 Training</h1>
+                            <button class="slide-btn">Learn More</button>
+                        </div>
+                        <!-- Clone of first slide -->
+                        <div class="slide clone" style="background-image: linear-gradient(rgba(75,0,110,0.50), rgba(26,0,48,0.50)), url('Resources/images/Add-Learn-Support.png');">
+                            <p class="slide-subtitle">Additional Learning Support</p>
+                            <h1>New study support is now available to all students</h1>
+                            <button class="slide-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <button class="carousel-arrow left" onclick="moveSlide(-1)">&#8249;</button>
+                    <button class="carousel-arrow right" onclick="moveSlide(1)">&#8250;</button>
+
+                    <div class="carousel-dots">
+                        <span class="dot active" onclick="goToSlide(0)"></span>
+                        <span class="dot" onclick="goToSlide(1)"></span>
+                        <span class="dot" onclick="goToSlide(2)"></span>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Navigation and information section -->
+    <section class="section-cards">
+ 
+        <!-- Card 1: Student Services -->
+        <a href="StudentServices.html" class="section-card">
+            <img src="Resources/images/mentalHealth.png" class="section-card-image" alt="Student Services">
+            <div class="section-card-body">
+                <p class="section-card-title">Student Services</p>
+                <p class="section-card-desc">Explore the wide range of services that we offer for our students </p>
+            </div>
+        </a>
+ 
+        <!-- Card 2: Careers -->
+        <a href="Career.html" class="section-card">
+            <img src="Resources/images/careers.png" class="section-card-image" alt="Student Services">
+            <div class="section-card-body">
+                <p class="section-card-title">Careers</p>
+                <p class="section-card-desc">Find out what career options await you, and how you can take the next step!</p>
+            </div>
+        </a>
+ 
+        <!-- Card 3: Student Events -->
+        <a href="StudentEvents.html" class="section-card">
+            <img src="Resources/images/sports.png" class="section-card-image" alt="Student Services">
+            <div class="section-card-body">
+                <p class="section-card-title">Student Events</p>
+                <p class="section-card-desc">Check out events from football to Pottery there's something for everyone</p>
+            </div>
+        </a>
+ 
+    </section>
+ 
+    <!-- Upcoming Events -->
+    <section class="events-section">
+        <div class="events-header">
+            <h2>Upcoming Events</h2>
+            <a href="StudentEvents.html" class="btn-all-events">All Events &rarr;</a>
+        </div>
+ 
+        <div class="events-grid">
+ 
+            <!-- Event Card 1 -->
+            <div class="event-card">
+                <div class="event-card-image-wrap">
+                    <img src="Resources/images/Football.png" alt="Football Photo">
+                    <span class="event-date-pill">Apr 12</span>
+                </div>
+                <div class="event-card-body">
+                    <p class="event-card-title">Under 25 Football Training</p>
+                    <p class="event-card-desc">Football training for PU students under 25</p>
+                </div>
+            </div>
+ 
+            <!-- Event Card 2 -->
+            <div class="event-card">
+                <div class="event-card-image-wrap">
+                    <img src="Resources/images/CU.png" alt="CU Photo">
+                    <span class="event-date-pill">Apr 15</span>
+                </div>
+                <div class="event-card-body">
+                    <p class="event-card-title">CU Bible Study</p>
+                    <p class="event-card-desc">Come join our bible study, all are welcome</p>
+                </div>
+            </div>
+ 
+            <!-- Event Card 3 -->
+            <div class="event-card">
+                <div class="event-card-image-wrap">
+                    <img src="Resources/images/Pottery.png" alt="Pottery Photo">
+                    <span class="event-date-pill">Apr 17</span>
+                </div>
+                <div class="event-card-body">
+                    <p class="event-card-title">Sip and Paint</p>
+                    <p class="event-card-desc">Come paint pottery and enjoy a free drink</p>
+                </div>
+            </div>
+ 
+            <!-- Event Card 4 -->
+            <div class="event-card">
+                <div class="event-card-image-wrap">
+                    <img src="Resources/images/Rugby.png" alt="Rugby Photo">
+                    <span class="event-date-pill">Apr 19</span>
+                </div>
+                <div class="event-card-body">
+                    <p class="event-card-title">Under 25 Rugby Training</p>
+                    <p class="event-card-desc">Rugby training for PU students under 25</p>
+                </div>
+            </div>
+ 
+        </div>
+    </section>
+ 
+    <!-- Campuses -->
+    <section class="campuses-section">
+        <h2>Campuses</h2>
+ 
+        <div class="campuses-grid">
+ 
+            <!-- Campus Card 1 -->
+            <div class="campus-card">
+                
+                <img src="Resources/images/Edinburgh.webp" class="campus-card-image" alt="Edinburgh campus">
+                <div class="campus-card-body">
+                    <p class="campus-card-title">Edinburgh</p>
+                    <p class="campus-card-desc"> Prince's University Edinburgh situated at the heart of Scotland surrounded by a rich history and culture</p>
+                </div>
+            </div>
+ 
+            <!-- Campus Card 2 -->
+            <div class="campus-card">
+                <img src="Resources/images/Belfast.png" class="campus-card-image" alt="Belfast campus">
+                <div class="campus-card-body">
+                    <p class="campus-card-title">Belfast</p>
+                    <p class="campus-card-desc"> Our Belfast campus offers its students a unique and vibrant experience making it a great to place to learn </p>
+                </div>
+            </div>
+ 
+            <!-- Campus Card 3 -->
+            <div class="campus-card">
+                <img src="Resources/images/Beijing.png" class="campus-card-image" alt="Beijing campus">
+                <div class="campus-card-body">
+                    <p class="campus-card-title">Beijing</p>
+                    <p class="campus-card-desc"> Experience beijings rich culture while recieving the education of your dreams </p>
+                </div>
+            </div>
+ 
+            <!-- Campus Card 4 -->
+            <div class="campus-card">
+                <img src="Resources/images/Ballymena.webp" class="campus-card-image" alt="Ballymena campus">
+                <div class="campus-card-body">
+                    <p class="campus-card-title">Ballymena</p>
+                    <p class="campus-card-desc"> A welcoming campus with easy access to shopping centres and the countryside</p>
+                </div>
+            </div>
+ 
+        </div>
+    </section>
+ 
+</div>
+
+<!-- Scroll To Top Button -->
+
+<button id="scrollTop" aria-label="Scroll to top"> &#8679; </button>
+
+        <!-- Footer -->
+
+        <footer class = "footer">
+            <div class="footer-content">
+                <img src="Resources/images/Logo-Sqr.png" alt="Prince's University Logo">
+                <p>princes st, Edinburgh<br>Scotland, EH2 2ER</p>
+            </div>
+
+            <div class="footer-socials">
+                <a href="#"><img src="Resources/images/Facebook.webp" alt="Facebook"></a>
+                <a href="#"><img src="Resources/images/Instagram.webp" alt="Instagram"></a>
+                <a href="#"><img src="Resources/images/Twitter.png" alt="Twitter"></a>
+            </div>
+
+              <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of service</a>
+            </div>
+
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"defer></script>
+        <script type = "text/javascript" src = "JS/login.js"defer></script>
+        <script src="JS/Index.js" defer></script>
+    </body>
+</html>

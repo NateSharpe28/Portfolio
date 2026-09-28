@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Services</title>
+
+<link rel="stylesheet" href="CSS/Main.css">
+
+<link rel="icon" href="Resources/images/Logo-Cir.webp" type="image/x-icon">
+
+
+</head>
+
+<body>
+
+
+<!-- Header -->
+<header class="header">
+    <img id="Logo" src="Resources/images/Logo-Sqr.png" alt="Prince's University Logo">
+
+    <nav>
+        <ul>
+            <li><a class="navLink" href="index.html">Home</a></li>
+            <li><a class="navLink" href="StudentServices.html">Student Services</a></li>
+            <li><a class="navLink" href="Career.html">Careers</a></li>
+            <li><a class="navLink" href="StudentEvents.html">Student Events</a></li>
+            <li><a class="navLink" href="Contact.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-icons">
+        <button id="darkToggle" aria-label="Toggle dark mode">
+            <img id="moonIcon" src="Resources/images/Sun.png" alt="Switch to dark mode">
+            <img id="sunIcon" src="Resources/images/Moon.png" alt="Switch to light mode" style="display:none;">
+        </button>
+
+        <div class = "dropdown">
+            <img id="profile" src="Resources/images/Profile-Light.webp" alt="Profile Icon">
+            <div class = "dropdown-content">
+                <form class = "loginForm" id ="loginForm" autocomplete="off">
+                    <label for ="email">Email:</label>
+                    <input type = "text" name="email" id ="email">
+                    <label for ="password">Password:</label>
+                    <input type = "password" name = "password" id="password">
+                    <input type = "submit" id = "loginButton">
+                    <p id = "errors"></p>
+                </form>
+            </div>
+        </div>
+
+        <button id="hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+
+<!-- Mobile Nav -->
+<nav id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="StudentServices.html">Student Services</a>
+    <a href="Career.html">Careers</a>
+    <a href="StudentEvents.html">Student Events</a>
+    <a href="Contact.html">Contacts</a>
+</nav>
+
+
+<!-- Page Contents -->
+<div class="content">
+
+    <h3 class="content-h1">Student Services</h3>
+
+    <section class="section-cards">
+
+        <a class="section-card">
+            <img class="section-card-image" src="Resources/images/mentalHealth.png" alt="Mental Health">
+            <div class="section-card-body">
+                <h2 class="campus-card-title">Mental Health Support</h2>
+                <p class="campus-card-desc">We are here to support you with anything you are struggling with. Our drop-in services are available to all students, both on campus and online.</p>
+            </div>
+        </a>
+
+        <a class="section-card">
+            <img class="section-card-image" src="Resources/images/careers.png" alt="Academic Support">
+            <div class="section-card-body">
+                <h2 class="campus-card-title">Academic Support</h2>
+                <p class="campus-card-desc">We provide support for modules, assignments and exams, ensuring you succeed throughout your studies.</p>
+            </div>
+        </a>
+
+        <a class="section-card">
+            <img class="section-card-image" src="Resources/images/Add-Learn-Support.png" alt="Additional Study Needs">
+            <div class="section-card-body">
+                <h2 class="campus-card-title">Additional Study Needs</h2>
+                <p class="campus-card-desc">Support services tailored for students with additional learning requirements, ensuring their success.</p>
+            </div>
+        </a>
+
+        <a class="section-card">
+            <img class="section-card-image" src="Resources/images/Financial-Support.png" alt="Financial Support">
+            <div class="section-card-body">
+                <h2 class="campus-card-title">Financial Support</h2>
+                <p class="campus-card-desc">Access bursaries, grants and advice to help manage your finances during university.</p>
+            </div>
+        </a>
+
+        <a class="section-card">
+            <img class="section-card-image" src="Resources/images/Careers-Support.png" alt="Careers Support">
+            <div class="section-card-body">
+                <h2 class="campus-card-title">Careers Support</h2>
+                <p class="campus-card-desc">Guidance on placements, CV writing and career planning for your future.</p>
+            </div>
+        </a>
+
+        <a class="section-card">
+            <img class="section-card-image" src="Resources/images/Globe.png" alt="International Student Support">
+            <div class="section-card-body">
+                <h2 class="campus-card-title">International Student Support</h2>
+                <p class="campus-card-desc">Specialised support for international students, including visa advice and cultural integration</p>
+            </div>
+        </a>
+
+    </section>
+
+</div>
+
+<!-- Scroll To Top Button -->
+<button id="scrollTop" aria-label="Scroll to top">&#8679;</button>
+
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="footer-content">
+        <p>Princes St, Edinburgh<br>Scotland, EH2 2ER</p>
+    </div>
+
+    <div class="footer-socials">
+        <a href="#"><img src="Resources/images/Facebook.webp" alt="Facebook"></a>
+        <a href="#"><img src="Resources/images/Instagram.webp" alt="Instagram"></a>
+        <a href="#"><img src="Resources/images/Twitter.png" alt="Twitter"></a>
+    </div>
+
+    <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Services</a>
+    </div>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-4.0.0.min.js"defer></script>
+<script type = "text/javascript" src = "JS/login.js"defer></script>
+<script src="JS/Main.js" defer></script>
+<script src="JS/Index.js" defer></script>
+
+
+</body>
+</html>
